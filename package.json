@@ -1,0 +1,42 @@
+{
+  "name": "topdescriptionservice",
+  "version": "1.0.0",
+  "description": "The top module with a description and image gallery",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server",
+    "react-dev": "webpack -w",
+    "dataSeed": "node database/seedingScript.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopher0331/topDescriptionService.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopher0331/topDescriptionService/issues"
+  },
+  "homepage": "https://github.com/christopher0331/topDescriptionService#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "faker": "^5.1.0",
+    "mongoose": "^5.10.13",
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "path": "^0.12.7",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
