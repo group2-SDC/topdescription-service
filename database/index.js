@@ -45,7 +45,7 @@ let save = (destination) => {
   });
 };
 
-let getAll = () => {
+let getData = () => {
     return new Promise((resolve, reject) => {
       Destination.find({}).exec((err, data) => {
         if(err){
@@ -59,5 +59,4 @@ let getAll = () => {
   }
 
 
-module.exports = save;
-module.exports = getAll;
+module.exports = { save, getData }

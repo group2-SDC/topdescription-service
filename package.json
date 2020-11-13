@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon server",
     "react-dev": "webpack -w",
+    "dataSeed": "node database/seedingScript.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
