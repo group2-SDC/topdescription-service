@@ -6,8 +6,8 @@
   "scripts": {
     "start": "nodemon server",
     "react-dev": "webpack -w",
-    "dataSeed": "node database/seedingScript.js", 
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dataSeed": "node database/seedingScript.js",
+    "test": "jest spec/test.js"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,9 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.5",
     "babel-loader": "^8.2.1",
+    "jest": "^26.6.3",
     "path": "^0.12.7",
+    "puppeteer": "^5.4.1",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0"
   }
