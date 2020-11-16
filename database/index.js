@@ -56,6 +56,7 @@ let getData = (id) => {
         if(err) {
           reject(err);
         } else {
+          console.log(data);
           resolve(data);
         }
       })

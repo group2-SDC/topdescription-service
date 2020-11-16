@@ -5,31 +5,29 @@ class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            initial: '',
-            data: ''
+            data: []
         };
     }
 
     componentDidMount() {
-        Axios.get('/getData')
+        Axios.get('/getData/0')
             .then((response) => {
                 this.setState({
-                    data: response.data
+                    data: response
                 })
             })
             .catch((error) => {
                 console.log(error)
             })
-    }
+        }
 
     render() {
         if(!this.state.data) {
-            return(
+            return (
                 <div>Loading</div>
             )
         } else {
-            console.log(this.state.data)
-            return(
+            return (
                 <div>React Is Working</div>
             )
         }

@@ -2,23 +2,20 @@ const Jest = require('jest');
 const puppeteer = require('puppeteer');
 const axios = require('axios');
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://news.ycombinator.com', {waitUntil: 'networkidle2'});
-  await page.pdf({path: 'hn.pdf', format: 'A4'});
-
-  await browser.close();
-})();
-
-describe('the firt destination has correct name', () => {
+describe('the first destination has correct name', () => {
     test('initial test is correct', () => {
-        axios.get('/getData')
+        axios.get('/getData/0')
             .then((response) => {
-                expect(response.data[0].name).toEqual('Sudan')
+                expect(response.data.name).toEqual('Burundi')
             })
-            .catch((error) => {
-                console.log(error);
-        })
+    });
+});
+
+describe('first destination should not equal "Paris"', () => {
+    test('second test is correct', () => {
+        axios.get('/getData/0')
+            .then((response) => {
+                expect(response.data.name).toEqual('Paris')
+            })
     });
 });

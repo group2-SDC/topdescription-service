@@ -57,7 +57,7 @@ let createDestinationObject = () => {
     }
 
     var index = 0
-    while (index <= 100) {
+    while (index < 100) {
         destinationObject = {
             id: index,
             name: faker.address.country(),
@@ -74,11 +74,12 @@ let createDestinationObject = () => {
 
         }
             index++ 
+            console.log(index)
             helperFuncs.save(destinationObject)
     };
 };
 
-createDestinationObject();
+// createDestinationObject();
 
 module.exports = createDestinationObject;
 
