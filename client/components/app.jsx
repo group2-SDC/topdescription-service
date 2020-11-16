@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import React from 'react';
-
+import DescriptionHalf from './DescriptionHalf.jsx'
+import CardComponent from './StyledComponents/CardComponent.js'
 class App extends React.Component {
     constructor(props) {
         super(props)
@@ -10,10 +11,10 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        Axios.get('/getData/0')
+        Axios.get('/getData/2')
             .then((response) => {
                 this.setState({
-                    data: response
+                    data: response.data[0]
                 })
             })
             .catch((error) => {
@@ -28,7 +29,9 @@ class App extends React.Component {
             )
         } else {
             return (
-                <div>React Is Working</div>
+                <CardComponent>
+                    <DescriptionHalf data={this.state.data}/>
+                </CardComponent>
             )
         }
     }

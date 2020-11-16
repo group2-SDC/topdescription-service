@@ -18,10 +18,10 @@ let createDestinationObject = () => {
         return arrayOfImages;
     };
 
+    let max = 12;
+    let min = 5;
+    let tourCount = Math.floor(Math.random() * (max - min + 1)) + min;
     let generateTours = () => {
-        let max = 12;
-        let min = 5;
-        let tourCount = Math.floor(Math.random() * (max - min + 1)) + min;
         let arrayOfTours = [];
         for(i = 0; i < tourCount; i++){
             arrayOfTours.push('The ' + faker.hacker.adjective() + ' ' + faker.hacker.noun() + ' ' + 'exerience!');
@@ -65,10 +65,11 @@ let createDestinationObject = () => {
             heart: faker.random.boolean(),
             reviews: faker.random.number(),
             averageRating: getRandomNumber(),
-            overview: faker.lorem.sentence(),
+            overview: faker.lorem.paragraph(),
             address: faker.address.streetAddress() + ' ' + faker.address.city() + ', ' + faker.address.state() + ' ' + faker.address.zipCode(),
             gallery: generateImages(),
             toursAndExperiences: generateTours(),
+            numberOfTours: tourCount,
             comments: generateComments(),
             openNow: generateHoursOfOperation()
 

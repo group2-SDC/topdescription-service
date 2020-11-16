@@ -15,6 +15,7 @@ let destinationSchema = mongoose.Schema({
   overview: String,
   address: String,
   toursAndExperiences: [ String ],
+  numberOfTours: Number,
   gallery: [ String ],
   comments: [ String ],
   openNow: String,
@@ -37,6 +38,7 @@ let save = (destination) => {
     overview: destination.overview,
     address: destination.address,
     toursAndExperiences: destination.toursAndExperiences,
+    numberOfTours: destination.numberOfTours,
     gallery: destination.gallery,
     comments: destination.comments,
     openNow: destination.openNow,
@@ -56,7 +58,6 @@ let getData = (id) => {
         if(err) {
           reject(err);
         } else {
-          console.log(data);
           resolve(data);
         }
       })

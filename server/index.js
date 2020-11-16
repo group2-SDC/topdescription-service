@@ -16,7 +16,6 @@ app.use(express.static('public'));
 app.get('/getData/:id', (req, res) => {
     dbHelpers.getData(req.params.id)
       .then((response) => {
-          console.log('from server ===> ', response)
           res.send(response);
       }) 
       .catch((error) => {
