@@ -18,10 +18,10 @@ let createDestinationObject = () => {
         return arrayOfImages;
     };
 
+    let max = 12;
+    let min = 5;
+    let tourCount = Math.floor(Math.random() * (max - min + 1)) + min;
     let generateTours = () => {
-        let max = 12;
-        let min = 5;
-        let tourCount = Math.floor(Math.random() * (max - min + 1)) + min;
         let arrayOfTours = [];
         for(i = 0; i < tourCount; i++){
             arrayOfTours.push('The ' + faker.hacker.adjective() + ' ' + faker.hacker.noun() + ' ' + 'exerience!');
@@ -57,7 +57,7 @@ let createDestinationObject = () => {
     }
 
     var index = 0
-    while (index <= 100) {
+    while (index < 100) {
         destinationObject = {
             id: index,
             name: faker.address.country(),
@@ -65,20 +65,23 @@ let createDestinationObject = () => {
             heart: faker.random.boolean(),
             reviews: faker.random.number(),
             averageRating: getRandomNumber(),
-            overview: faker.lorem.sentence(),
+            overview: faker.lorem.paragraph(),
             address: faker.address.streetAddress() + ' ' + faker.address.city() + ', ' + faker.address.state() + ' ' + faker.address.zipCode(),
             gallery: generateImages(),
             toursAndExperiences: generateTours(),
+            numberOfTours: tourCount,
+            suggestedDuration: getRandomNumber(),
             comments: generateComments(),
             openNow: generateHoursOfOperation()
 
         }
             index++ 
+            console.log(index)
             helperFuncs.save(destinationObject)
     };
 };
 
-createDestinationObject();
+// createDestinationObject();
 
 module.exports = createDestinationObject;
 

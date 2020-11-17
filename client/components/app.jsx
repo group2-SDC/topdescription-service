@@ -1,36 +1,40 @@
 import Axios from 'axios';
 import React from 'react';
+import DescriptionHalf from './DescriptionHalf.jsx';
+import CardComponent from './StyledComponents/CardComponentStyle.js';
+import GalleryHalf from './GalleryHalf.jsx'
 
 class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            initial: '',
-            data: ''
+            data: []
         };
     }
 
     componentDidMount() {
-        Axios.get('/getData')
+        Axios.get('/getData/1')
             .then((response) => {
                 this.setState({
-                    data: response.data
+                    data: response.data[0]
                 })
             })
             .catch((error) => {
                 console.log(error)
             })
-    }
+        }
 
     render() {
         if(!this.state.data) {
-            return(
+            return (
                 <div>Loading</div>
             )
         } else {
-            console.log(this.state.data)
-            return(
-                <div>React Is Working</div>
+            return (
+                <CardComponent>
+                    <DescriptionHalf data={this.state.data} />
+                    <GalleryHalf data={this.state.data} />
+                </CardComponent>
             )
         }
     }

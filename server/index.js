@@ -14,13 +14,13 @@ app.use(express.static('public'));
 
 
 app.get('/getData/:id', (req, res) => {
-    dbHelpers.getData(req.params.id )
+    dbHelpers.getData(req.params.id)
       .then((response) => {
           res.send(response);
       }) 
       .catch((error) => {
           res.send(404);
-      })
+    })
 })
 
 app.listen(port, () => console.log(`listening on port ${port}`)); 
