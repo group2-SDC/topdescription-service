@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import ReviewsSection from './StyledComponents/ReviewsSection.js'
-import TitleName from './StyledComponents/TitleName.js'
-import ReviewsComponent from './StyledComponents/ReviewsComponent.js'
-import ToursComponent from './StyledComponents/ToursComponent.js'
-import Category from './StyledComponents/Category.js'
-import Overview from './Overview.jsx'
+import ReviewsSection from './StyledComponents/ReviewsSectionStyle.js'
+import TitleName from './StyledComponents/TitleStyle.js'
+import ReviewsComponent from './StyledComponents/ReviewsComponentStyle.js'
+import ToursComponent from './StyledComponents/ToursComponentStyle.js'
+import Category from './StyledComponents/CategoryComponentStyle.js'
+
 class NameReviewTours extends React.Component{
     constructor(props){
         super(props);

@@ -6,7 +6,7 @@ const Overview = (props) => (
     
     <div>
         <DescriptionTitleStyle>
-            Description
+            Overview
         </DescriptionTitleStyle>
         <DescriptionStyle>
             <div>{props.data.overview}</div>

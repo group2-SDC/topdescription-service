@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ReviewsComponent = styled.section`
+const ReviewsComponent = styled.div`
     display: flexbox;
     justify-content: flex-start;
     font-size: 8px;

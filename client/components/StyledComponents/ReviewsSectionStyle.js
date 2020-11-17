@@ -7,6 +7,12 @@ const ReviewsSection = styled.section`
     padding-left: 2px;
     font-family: Poppins;
     color: green;
+
+    &:hover {
+        cursor: pointer;
+        color: black;
+        text-decoration: underline;
+    }
 `;
 
 export default ReviewsSection;

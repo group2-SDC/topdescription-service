@@ -6,6 +6,11 @@ const Category = styled.section`
     color: black;
     padding-top: 5px;
     padding-left: 2px;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 `;
 
 export default Category;

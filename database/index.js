@@ -19,6 +19,7 @@ let destinationSchema = mongoose.Schema({
   gallery: [ String ],
   comments: [ String ],
   openNow: String,
+  suggestedDuration: Number,
   duration: Number
 });
 
@@ -42,6 +43,7 @@ let save = (destination) => {
     gallery: destination.gallery,
     comments: destination.comments,
     openNow: destination.openNow,
+    suggestedDuration: destination.suggestedDuration,
     duration: destination.duration
   })
 

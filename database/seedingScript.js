@@ -70,6 +70,7 @@ let createDestinationObject = () => {
             gallery: generateImages(),
             toursAndExperiences: generateTours(),
             numberOfTours: tourCount,
+            suggestedDuration: getRandomNumber(),
             comments: generateComments(),
             openNow: generateHoursOfOperation()
 

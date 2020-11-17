@@ -6,7 +6,12 @@ const ToursComponent = styled.section`
     font-size: 8px;
     font-family: Poppins;
     color: black;
-    padding-left: 2px;
+    padding-left: 3px;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
 `;
 
 export default ToursComponent;
