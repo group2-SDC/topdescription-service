@@ -8,12 +8,16 @@ let createDestinationObject = () => {
     let generateImages = () => {
         let max = 30;
         let min = 5;
+
         let imageCount = Math.floor(Math.random() * (max - min + 1)) + min;
-
+        
         let arrayOfImages = [];
-
+        
         for(i = 0; i < imageCount; i++){
-            arrayOfImages.push(faker.image.nature());
+            let imageIndexMin = 80;
+            let imageIndexMax = 200;
+            let imageIndex = Math.floor(Math.random() * (imageIndexMax - imageIndexMin + 1)) + imageIndexMin;
+            arrayOfImages.push(`https://picsum.photos/id/${imageIndex}/385/340`);
         }
         return arrayOfImages;
     };
@@ -76,7 +80,6 @@ let createDestinationObject = () => {
 
         }
             index++ 
-            console.log(index)
             helperFuncs.save(destinationObject)
     };
 };

@@ -6,7 +6,7 @@ import IconInfoStyle from './StyledComponents/IconInfoStyle.js';
 
 class OpenNow extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
         
     }
 

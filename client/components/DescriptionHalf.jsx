@@ -10,9 +10,9 @@ class DestinationCard extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            data: [],
-        }
-    }
+            data: []
+        };
+    };
 
     render() {
         if(!this.props.data) {
@@ -20,7 +20,6 @@ class DestinationCard extends React.Component{
                 <h1>Loading</h1>
             )
         } else {
-            {console.log(this.props.data.openNow)}
             return(
                 <div>
                     <NameReviewTours data={this.props.data} />
@@ -30,9 +29,9 @@ class DestinationCard extends React.Component{
                     <Address data={this.props.data} />
                     <ToursAndExperiences data={this.props.data} />
                 </div>
-            )
-        }
-    }
-}
+            );
+        };
+    };
+};
 
 export default DestinationCard;

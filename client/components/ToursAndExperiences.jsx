@@ -9,7 +9,7 @@ import ButtonStyle from './StyledComponents/ButtonStyle';
 
 class ToursAndExperiences extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
         
     }
 
@@ -30,8 +30,8 @@ class ToursAndExperiences extends React.Component {
                     </IconInfoTxtStyle>
                 </IconInfoStyle>
             </ToursAndExpBoxStyle>
-        )
-    }
-}
+        );
+    };
+};
 
 export default ToursAndExperiences;

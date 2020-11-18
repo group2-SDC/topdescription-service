@@ -6,12 +6,11 @@ import IconInfoStyle from './StyledComponents/IconInfoStyle.js';
 
 class SuggestedDuration extends React.Component {
     constructor(props){
-        super(props)
+        super(props);
         
     }
 
     render() {
-        {console.log(this.props.data)}
         return(
             <IconInfoStyle>
                 <FontAwesomeIcon icon={faClock} />

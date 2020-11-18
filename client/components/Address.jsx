@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faPencilAlt } from '@fortawesome/free-solid-svg-icons'
 import IconInfoTxtStyle from './StyledComponents/IconInfoTxtStyle';
 import IconInfoStyle from './StyledComponents/IconInfoStyle.js';
-import { faPennyArcade } from '@fortawesome/free-brands-svg-icons';
 
 class Address extends React.Component {
     constructor(props){
@@ -12,7 +11,6 @@ class Address extends React.Component {
     }
 
     render() {
-        {console.log(this.props.data)}
         return(
             <div>
                 <IconInfoStyle>
@@ -20,9 +18,8 @@ class Address extends React.Component {
                     <IconInfoTxtStyle>
                         <strong>Address: </strong> {this.props.data.address}
                     </IconInfoTxtStyle>  
-                    <FontAwesomeIcon icon={faMapMarkerAlt} />
-                    
                 </IconInfoStyle>
+                
                 <IconInfoStyle>
                     <FontAwesomeIcon icon={faPencilAlt} />
                     <IconInfoTxtStyle>

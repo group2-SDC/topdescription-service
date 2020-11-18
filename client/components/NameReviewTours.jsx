@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faHeart, faMailBulk } from '@fortawesome/free-solid-svg-icons'
 import ReviewsSection from './StyledComponents/ReviewsSectionStyle.js'
 import TitleName from './StyledComponents/TitleStyle.js'
 import ReviewsComponent from './StyledComponents/ReviewsComponentStyle.js'
@@ -20,7 +20,7 @@ class NameReviewTours extends React.Component{
         if(!this.props.data) {
             return(
                 <h1>Loading</h1>
-            )
+            );
         } else {
             return(
                 <div>
@@ -38,15 +38,19 @@ class NameReviewTours extends React.Component{
                     </ReviewsSection>
                     <ToursComponent>
                         #1 of {this.props.data.numberOfTours} things to do in {this.props.data.name}
+                  
+                    <FontAwesomeIcon icon={faHeart} padding-left="85px"/>
+                    <FontAwesomeIcon icon={faMailBulk} />
+                        
                     </ToursComponent>
+
                     <Category>
                         Farmers Markets
-                    </Category>
-                    
+                    </Category>    
                 </div>
-            )
-        }
-    }
-}
+            );
+        };
+    };
+};
 
 export default NameReviewTours;
