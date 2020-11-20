@@ -8,7 +8,6 @@ const ReviewsComponent = styled.div`
     color: black;
     padding-left: 7px;
     padding-bottom: 8px
-
 `;
 
 export default ReviewsComponent;

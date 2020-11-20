@@ -22,7 +22,7 @@ class Gallery extends React.Component {
         if(this.state.currentImageIndx < length){
             this.setState({
                 currentImageIndx: this.state.currentImageIndx + 1
-            });
+            })
         } else {
             this.setState({
                 currentImageIndx: 0
@@ -43,21 +43,6 @@ class Gallery extends React.Component {
         };
     };
 
-
-    showModal() {
-        this.setState({
-            modal: true
-        });
-    };
-
-    hideModal() {
-        this.setState({
-            modal: false
-        });
-    };
-
-
-
     render() {
         if (!this.props.data.gallery) {
             return (
@@ -73,8 +58,7 @@ class Gallery extends React.Component {
                     <NextandPrevious>
                         <button onClick={() => {this.nextImage()}}>Next</button>
                     </NextandPrevious>
-            </GalleryModal>
-                  
+                </GalleryModal>
                 
             );
         };

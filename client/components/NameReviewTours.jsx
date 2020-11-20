@@ -6,7 +6,7 @@ import TitleName from './StyledComponents/TitleStyle.js'
 import ReviewsComponent from './StyledComponents/ReviewsComponentStyle.js'
 import ToursComponent from './StyledComponents/ToursComponentStyle.js'
 import Category from './StyledComponents/CategoryComponentStyle.js'
-
+import HeartandEmailStyle from './StyledComponents/HeartandEmailStyle.js'
 class NameReviewTours extends React.Component{
     constructor(props){
         super(props);
@@ -38,9 +38,10 @@ class NameReviewTours extends React.Component{
                     </ReviewsSection>
                     <ToursComponent>
                         #1 of {this.props.data.numberOfTours} things to do in {this.props.data.name}
-                  
-                    <FontAwesomeIcon icon={faHeart} padding-left="85px"/>
-                    <FontAwesomeIcon icon={faMailBulk} />
+                    <HeartandEmailStyle>
+                        <FontAwesomeIcon icon={faHeart} style={{paddingLeft: "85px"}}/>
+                        <FontAwesomeIcon icon={faMailBulk} />
+                    </HeartandEmailStyle>
                         
                     </ToursComponent>
 

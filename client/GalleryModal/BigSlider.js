@@ -5,14 +5,13 @@ import Slide from './Slide.js';
 import Arrows from './Arrows.js';
 import ArrowLeftStyle from './ArrowLeftCSS';
 import ArrowRightStyle from './ArrowRightCSS';
-import Dots from './Dots.js';
+import DotsBS from './DotsBigSlider.js';
 import GalleryButtonStyle from './GalleryButtonStyle.js';
-import { faCamera } from '@fortawesome/free-solid-svg-icons';
+import { faCamera, faTimes} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import FullScreenButtonStyle from './FullScreenButton.js';
-import BigSlider from './BigSlider.js';
 
-const Slider = ({ data, showModalGallery, showFunc }) => {
+
+const BigSlider = ({ data, showModalGallery, showFunc }) => {
 
     const [state, setState] = useState({
         activeIndex: 0,
@@ -21,6 +20,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
       });
     
       const { translate, transition, activeIndex } = state
+
 
       const nextSlide = () => {
         if (activeIndex === data.length - 1) {
@@ -54,6 +54,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
           });
         };
 
+
     if (!data) {
         return (
             <div>
@@ -62,41 +63,43 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
         );
     } else if (data) {
         return (
-            <Viewer>
-                <SliderCSS>
+            <ViewerBS>
+                <XStyle2>
+                    <FontAwesomeIcon icon={faTimes} onClick={() => showFunc(false)} style={{color: 'black', marginLeft: '98%'}}/>
+                </XStyle2>
+                <SliderCSSBS>
                     <SliderContent translate={translate} transition={transition}>
                         {data.map(slide => (
                             <Slide key={slide} content={slide} />
                             ))}
                     </SliderContent>
-                </SliderCSS>
-                <HoverButtons>
+                </SliderCSSBS>
+                <HoverButtonsBS>
                     <ArrowRightStyle>
-                            <Arrows direction="right" handleClick={nextSlide} />
+                            <Arrows direction="right" handleClick={nextSlide}/>
                     </ArrowRightStyle>
 
                     <ArrowLeftStyle>
                             <Arrows direction="left" handleClick={prevSlide} />
                     </ArrowLeftStyle>
-                    
-                    <Dots slides={data} activeIndex={activeIndex} />
-                    
-                    <GalleryButtonStyle onClick={() => showModalGallery(true)}>
-                        <FontAwesomeIcon icon={faCamera} style={{marginRight: '2px'}}/> All Photos ({data.length})
+
+                    <GalleryButtonStyle onClick={() => showModalGallery(true)} style={{top:'5%', background: 'white', color: 'black'}}>
+                        <FontAwesomeIcon icon={faCamera} style={{marginRight: '2px'}}/> Gallery
                     </GalleryButtonStyle>
 
-                    <FullScreenButtonStyle onClick={() => showFunc(true)}>
-                            FullScreen
-                    </FullScreenButtonStyle>
-                </HoverButtons>
-            </Viewer>
+                </HoverButtonsBS>
+            </ViewerBS>
         )
     }
 }
 
+const XStyle2 = styled.div`
+    background: whitesmoke;
+    justify-content: right;
+    cursor: pointer;
+`;
 
-
-const HoverButtons = styled.div`
+const HoverButtonsBS = styled.div`
     z-index: 3;
     &:hover{
         z-index: 6
@@ -107,25 +110,27 @@ const HoverButtons = styled.div`
 
 `;
 
-const SliderCSS = styled.div`
+const SliderCSSBS = styled.div`
     position: relative;
+    top: 5%;
     margin: 0 auto;
     overflow: hidden;
     width: 385px;
-    height: 340px;
+    height: 385px;
     z-index: 5;
     &:hover {
         z-index: 0;
     }
 `;
 
-const Viewer = styled.div`
+const ViewerBS = styled.div`
     position: relative;
-    width: 385px;
-    height: 340px;
+    width: 385;
+    height: 425px;
     z-index: 1;
+    background: black;
 `;
 
 
-export default Slider;
+export default BigSlider;
 
