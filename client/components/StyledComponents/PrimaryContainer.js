@@ -5,7 +5,6 @@ const PrimaryContainer = styled.section`
     justify-content: flex-start;
     padding-left: 10vw;
     width: 225px;
-   
 `;
 
 export default PrimaryContainer;

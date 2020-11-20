@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const ArrowLeftStyle = styled.div`
     display: flex;
     position: absolute;
-    z-index: 12px;
     top: 45%;
     left: 0px;
     height: 50px;
@@ -14,8 +13,10 @@ const ArrowLeftStyle = styled.div`
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
+    z-index: 0;
     transition: transform ease-in 0.1s;
     &:hover {
+    z-index: 6;
     transform: scale(1.1);
     }
     img {

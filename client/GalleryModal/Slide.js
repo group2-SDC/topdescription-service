@@ -1,27 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-class Slide extends React.Component {
-    constructor(props){
-        super(props);
-    }
+const Slide = (props) => {
 
-
-    render() {
-        
-        if(!this.props) {
+        if(!props) {
             return (
                 <div>Loading!</div>
             )
         } else {
             return(
                 <SlideStyle>
-                    <img src={this.props.content} />
+                    <img src={props.content} />
                 </SlideStyle>
             )
         }
     }
-}
 
 const SlideStyle = styled.div`
     height: 100;

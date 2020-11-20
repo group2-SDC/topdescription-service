@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const Dot = styled.span`
+const DotBS = styled.span`
       padding: 2px;
       margin-right: 5px;
       cursor: pointer;
@@ -13,7 +13,7 @@ const Dot = styled.span`
       }
 `;
 
-const DotsStyle = styled.div`
+const DotsStyleBS = styled.div`
       position: absolute;
       bottom: 25px;
       width: 100%;
@@ -26,15 +26,15 @@ const DotsStyle = styled.div`
     }
 `;
 
-const Dots = ({slides, activeIndex}) => {
+const DotsBS = ({slides, activeIndex}) => {
     return (
-        <DotsStyle>
+        <DotsStyleBS>
             {slides.map((slide, i) => (
-            <Dot key={slide} active={activeIndex === i} />
+            <DotBS key={slide} active={activeIndex === i} />
             ))}
-        </DotsStyle>
+        </DotsStyleBS>
     )
 }
 
 
-export default Dots;
+export default DotsBS;
