@@ -15,15 +15,17 @@ class App extends React.Component {
         this.state = {
             data: [],
             showSlider: false,
-            showImageGallery: false
+            showImageGallery: false,
+	    index: window.location.pathname.slice(1,3)
         };
 
         this.showModalGallery = this.showModalGallery.bind(this);
         this.showFunc = this.showFunc.bind(this);
     };
 
-    componentDidMount() {
-        Axios.get('/getData/2')
+    componentDidMount(){
+        console.log('id from app ===> ', this.state.index)
+	    Axios.get(`api/listings/${this.state.index}/carousel`)
             .then((response) => {
                 this.setState({
                     data: response.data[0]

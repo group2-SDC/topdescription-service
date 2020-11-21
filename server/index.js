@@ -3,19 +3,19 @@ const bodyParser = require('body-parser');
 const createDestinationObject = require('../database/seedingScript.js')
 const dbHelpers = require('../database/index.js');
 const app = express();
-const port = 3010;
+const port = 3000;
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 var jsonParser = bodyParser.json();
 
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
+app.use('/:id', express.static('public'));
 
-
-app.get('/getData/:id', (req, res) => {
-    dbHelpers.getData(req.params.id)
-      .then((response) => {
+app.get('/:id/api/listings/:id/carousel', (req, res) => {
+    console.log(req.params.id)
+	dbHelpers.getData(req.params.id)
+     .then((response) => {
           res.send(response);
       }) 
       .catch((error) => {

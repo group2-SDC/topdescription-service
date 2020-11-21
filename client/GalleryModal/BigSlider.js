@@ -125,10 +125,10 @@ const SliderCSSBS = styled.div`
 
 const ViewerBS = styled.div`
     position: relative;
-    width: 385;
+    width: 200;
     height: 425px;
     z-index: 1;
-    background: black;
+    background: yellow;
 `;
 
 
