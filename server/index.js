@@ -10,7 +10,7 @@ var jsonParser = bodyParser.json();
 
 app.use(bodyParser.json());
 
-app.use('/:id', express.static('public'));
+app.use('/:listing_id', express.static('public'));
 
 app.get('/api/listings/:listing_id/carousel', (req, res) => {
     console.log(req.params.listing_id)
