@@ -66,7 +66,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
                 <SliderCSS>
                     <SliderContent translate={translate} transition={transition}>
                         {data.map(slide => (
-                            <Slide key={slide} content={slide} />
+                            <Slide key={slide} content={slide} style={{width: '385px', height: '340px'}}/>
                             ))}
                     </SliderContent>
                 </SliderCSS>

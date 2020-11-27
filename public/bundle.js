@@ -1147,6 +1147,7 @@ eval("module.exports = __webpack_require__(/*! ./lib/axios */ \"./node_modules/a
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1160,6 +1161,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 50:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1173,6 +1175,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \*************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 19:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1186,6 +1189,7 @@ eval("\n\n/**\n * A `Cancel` is an object that is thrown when an operation is ca
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 57:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1199,6 +1203,7 @@ eval("\n\nvar Cancel = __webpack_require__(/*! ./Cancel */ \"./node_modules/axio
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1212,6 +1217,7 @@ eval("\n\nmodule.exports = function isCancel(value) {\n  return !!(value && valu
   \**********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 95:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1225,6 +1231,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1238,6 +1245,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1251,6 +1259,7 @@ eval("\n\nvar isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL *
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 15:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1264,6 +1273,7 @@ eval("\n\nvar enhanceError = __webpack_require__(/*! ./enhanceError */ \"./node_
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1277,6 +1287,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1290,6 +1301,7 @@ eval("\n\n/**\n * Update an Error with the specified config, error code, and res
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1303,6 +1315,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \***********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1316,6 +1329,7 @@ eval("\n\nvar createError = __webpack_require__(/*! ./createError */ \"./node_mo
   \******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 13:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1329,6 +1343,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 98:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1342,6 +1357,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./utils */ \"./node_modules/axios/
   \************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1355,6 +1371,7 @@ eval("\n\nmodule.exports = function bind(fn, thisArg) {\n  return function wrap(
   \****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1368,6 +1385,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*******************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 10:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1381,6 +1399,7 @@ eval("\n\n/**\n * Creates a new URL by combining the specified URLs\n *\n * @par
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1394,6 +1413,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \*********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1407,6 +1427,7 @@ eval("\n\n/**\n * Determines whether the specified URL is absolute\n *\n * @para
   \***********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1420,6 +1441,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \***************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 5:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1433,6 +1455,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ../utils */ \"./node_modules/axios
   \********************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 27:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1446,6 +1469,7 @@ eval("\n\nvar utils = __webpack_require__(/*! ./../utils */ \"./node_modules/axi
   \**************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 23:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -1459,6 +1483,7 @@ eval("\n\n/**\n * Syntactic sugar for invoking a function and expanding an array
   \*****************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 328:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -1642,7 +1667,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SlideContent_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SlideContent.js */ \"./client/GalleryModal/SlideContent.js\");\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var _Slide_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Slide.js */ \"./client/GalleryModal/Slide.js\");\n/* harmony import */ var _Arrows_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Arrows.js */ \"./client/GalleryModal/Arrows.js\");\n/* harmony import */ var _ArrowLeftCSS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ArrowLeftCSS */ \"./client/GalleryModal/ArrowLeftCSS.js\");\n/* harmony import */ var _ArrowRightCSS__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ArrowRightCSS */ \"./client/GalleryModal/ArrowRightCSS.js\");\n/* harmony import */ var _Dots_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Dots.js */ \"./client/GalleryModal/Dots.js\");\n/* harmony import */ var _GalleryButtonStyle_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GalleryButtonStyle.js */ \"./client/GalleryModal/GalleryButtonStyle.js\");\n/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ \"./node_modules/@fortawesome/free-solid-svg-icons/index.es.js\");\n/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ \"./node_modules/@fortawesome/react-fontawesome/index.es.js\");\n/* harmony import */ var _FullScreenButton_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./FullScreenButton.js */ \"./client/GalleryModal/FullScreenButton.js\");\n/* harmony import */ var _BigSlider_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./BigSlider.js */ \"./client/GalleryModal/BigSlider.js\");\nfunction _templateObject3() {\n  var data = _taggedTemplateLiteral([\"\\n    position: relative;\\n    width: 385px;\\n    height: 340px;\\n    z-index: 1;\\n\"]);\n\n  _templateObject3 = function _templateObject3() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _templateObject2() {\n  var data = _taggedTemplateLiteral([\"\\n    position: relative;\\n    margin: 0 auto;\\n    overflow: hidden;\\n    width: 385px;\\n    height: 340px;\\n    z-index: 5;\\n    &:hover {\\n        z-index: 0;\\n    }\\n\"]);\n\n  _templateObject2 = function _templateObject2() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n    z-index: 3;\\n    &:hover{\\n        z-index: 6\\n    }\\n    &:active{\\n        z-index: 6\\n    }\\n\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar Slider = function Slider(_ref) {\n  var data = _ref.data,\n      showModalGallery = _ref.showModalGallery,\n      showFunc = _ref.showFunc;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({\n    activeIndex: 0,\n    translate: 0,\n    transition: 0.45\n  }),\n      _useState2 = _slicedToArray(_useState, 2),\n      state = _useState2[0],\n      setState = _useState2[1];\n\n  var translate = state.translate,\n      transition = state.transition,\n      activeIndex = state.activeIndex;\n\n  var nextSlide = function nextSlide() {\n    if (activeIndex === data.length - 1) {\n      return setState(_objectSpread(_objectSpread({}, state), {}, {\n        translate: 0,\n        activeIndex: 0\n      }));\n    }\n\n    ;\n    setState(_objectSpread(_objectSpread({}, state), {}, {\n      activeIndex: activeIndex + 1,\n      translate: (activeIndex + 1) * 385\n    }));\n  };\n\n  var prevSlide = function prevSlide() {\n    if (activeIndex === 0) {\n      return setState(_objectSpread(_objectSpread({}, state), {}, {\n        translate: (data.length - 1) * 385,\n        activeIndex: data.length - 1\n      }));\n    }\n\n    ;\n    setState(_objectSpread(_objectSpread({}, state), {}, {\n      activeIndex: activeIndex - 1,\n      translate: (activeIndex - 1) * 385\n    }));\n  };\n\n  if (!data) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"Loading!!\");\n  } else if (data) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Viewer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SliderCSS, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SlideContent_js__WEBPACK_IMPORTED_MODULE_1__.default, {\n      translate: translate,\n      transition: transition\n    }, data.map(function (slide) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Slide_js__WEBPACK_IMPORTED_MODULE_2__.default, {\n        key: slide,\n        content: slide\n      });\n    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HoverButtons, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArrowRightCSS__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Arrows_js__WEBPACK_IMPORTED_MODULE_3__.default, {\n      direction: \"right\",\n      handleClick: nextSlide\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArrowLeftCSS__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Arrows_js__WEBPACK_IMPORTED_MODULE_3__.default, {\n      direction: \"left\",\n      handleClick: prevSlide\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Dots_js__WEBPACK_IMPORTED_MODULE_6__.default, {\n      slides: data,\n      activeIndex: activeIndex\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_GalleryButtonStyle_js__WEBPACK_IMPORTED_MODULE_7__.default, {\n      onClick: function onClick() {\n        return showModalGallery(true);\n      }\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_8__.FontAwesomeIcon, {\n      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__.faCamera,\n      style: {\n        marginRight: '2px'\n      }\n    }), \" All Photos (\", data.length, \")\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FullScreenButton_js__WEBPACK_IMPORTED_MODULE_9__.default, {\n      onClick: function onClick() {\n        return showFunc(true);\n      }\n    }, \"FullScreen\")));\n  }\n};\n\nvar HoverButtons = styled_components__WEBPACK_IMPORTED_MODULE_12__.default.div(_templateObject());\nvar SliderCSS = styled_components__WEBPACK_IMPORTED_MODULE_12__.default.div(_templateObject2());\nvar Viewer = styled_components__WEBPACK_IMPORTED_MODULE_12__.default.div(_templateObject3());\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slider);\n\n//# sourceURL=webpack://topdescriptionservice/./client/GalleryModal/Slider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _SlideContent_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SlideContent.js */ \"./client/GalleryModal/SlideContent.js\");\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var _Slide_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Slide.js */ \"./client/GalleryModal/Slide.js\");\n/* harmony import */ var _Arrows_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Arrows.js */ \"./client/GalleryModal/Arrows.js\");\n/* harmony import */ var _ArrowLeftCSS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ArrowLeftCSS */ \"./client/GalleryModal/ArrowLeftCSS.js\");\n/* harmony import */ var _ArrowRightCSS__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ArrowRightCSS */ \"./client/GalleryModal/ArrowRightCSS.js\");\n/* harmony import */ var _Dots_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Dots.js */ \"./client/GalleryModal/Dots.js\");\n/* harmony import */ var _GalleryButtonStyle_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GalleryButtonStyle.js */ \"./client/GalleryModal/GalleryButtonStyle.js\");\n/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ \"./node_modules/@fortawesome/free-solid-svg-icons/index.es.js\");\n/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ \"./node_modules/@fortawesome/react-fontawesome/index.es.js\");\n/* harmony import */ var _FullScreenButton_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./FullScreenButton.js */ \"./client/GalleryModal/FullScreenButton.js\");\n/* harmony import */ var _BigSlider_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./BigSlider.js */ \"./client/GalleryModal/BigSlider.js\");\nfunction _templateObject3() {\n  var data = _taggedTemplateLiteral([\"\\n    position: relative;\\n    width: 385px;\\n    height: 340px;\\n    z-index: 1;\\n\"]);\n\n  _templateObject3 = function _templateObject3() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _templateObject2() {\n  var data = _taggedTemplateLiteral([\"\\n    position: relative;\\n    margin: 0 auto;\\n    overflow: hidden;\\n    width: 385px;\\n    height: 340px;\\n    z-index: 5;\\n    &:hover {\\n        z-index: 0;\\n    }\\n\"]);\n\n  _templateObject2 = function _templateObject2() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n    z-index: 3;\\n    &:hover{\\n        z-index: 6\\n    }\\n    &:active{\\n        z-index: 6\\n    }\\n\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }\n\nfunction _nonIterableRest() { throw new TypeError(\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"); }\n\nfunction _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === \"string\") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === \"Object\" && o.constructor) n = o.constructor.name; if (n === \"Map\" || n === \"Set\") return Array.from(o); if (n === \"Arguments\" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }\n\nfunction _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }\n\nfunction _iterableToArrayLimit(arr, i) { if (typeof Symbol === \"undefined\" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i[\"return\"] != null) _i[\"return\"](); } finally { if (_d) throw _e; } } return _arr; }\n\nfunction _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvar Slider = function Slider(_ref) {\n  var data = _ref.data,\n      showModalGallery = _ref.showModalGallery,\n      showFunc = _ref.showFunc;\n\n  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({\n    activeIndex: 0,\n    translate: 0,\n    transition: 0.45\n  }),\n      _useState2 = _slicedToArray(_useState, 2),\n      state = _useState2[0],\n      setState = _useState2[1];\n\n  var translate = state.translate,\n      transition = state.transition,\n      activeIndex = state.activeIndex;\n\n  var nextSlide = function nextSlide() {\n    if (activeIndex === data.length - 1) {\n      return setState(_objectSpread(_objectSpread({}, state), {}, {\n        translate: 0,\n        activeIndex: 0\n      }));\n    }\n\n    ;\n    setState(_objectSpread(_objectSpread({}, state), {}, {\n      activeIndex: activeIndex + 1,\n      translate: (activeIndex + 1) * 385\n    }));\n  };\n\n  var prevSlide = function prevSlide() {\n    if (activeIndex === 0) {\n      return setState(_objectSpread(_objectSpread({}, state), {}, {\n        translate: (data.length - 1) * 385,\n        activeIndex: data.length - 1\n      }));\n    }\n\n    ;\n    setState(_objectSpread(_objectSpread({}, state), {}, {\n      activeIndex: activeIndex - 1,\n      translate: (activeIndex - 1) * 385\n    }));\n  };\n\n  if (!data) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"div\", null, \"Loading!!\");\n  } else if (data) {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Viewer, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(SliderCSS, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SlideContent_js__WEBPACK_IMPORTED_MODULE_1__.default, {\n      translate: translate,\n      transition: transition\n    }, data.map(function (slide) {\n      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Slide_js__WEBPACK_IMPORTED_MODULE_2__.default, {\n        key: slide,\n        content: slide,\n        style: {\n          width: '385px',\n          height: '340px'\n        }\n      });\n    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(HoverButtons, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArrowRightCSS__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Arrows_js__WEBPACK_IMPORTED_MODULE_3__.default, {\n      direction: \"right\",\n      handleClick: nextSlide\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArrowLeftCSS__WEBPACK_IMPORTED_MODULE_4__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Arrows_js__WEBPACK_IMPORTED_MODULE_3__.default, {\n      direction: \"left\",\n      handleClick: prevSlide\n    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Dots_js__WEBPACK_IMPORTED_MODULE_6__.default, {\n      slides: data,\n      activeIndex: activeIndex\n    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_GalleryButtonStyle_js__WEBPACK_IMPORTED_MODULE_7__.default, {\n      onClick: function onClick() {\n        return showModalGallery(true);\n      }\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_8__.FontAwesomeIcon, {\n      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_11__.faCamera,\n      style: {\n        marginRight: '2px'\n      }\n    }), \" All Photos (\", data.length, \")\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_FullScreenButton_js__WEBPACK_IMPORTED_MODULE_9__.default, {\n      onClick: function onClick() {\n        return showFunc(true);\n      }\n    }, \"FullScreen\")));\n  }\n};\n\nvar HoverButtons = styled_components__WEBPACK_IMPORTED_MODULE_12__.default.div(_templateObject());\nvar SliderCSS = styled_components__WEBPACK_IMPORTED_MODULE_12__.default.div(_templateObject2());\nvar Viewer = styled_components__WEBPACK_IMPORTED_MODULE_12__.default.div(_templateObject3());\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slider);\n\n//# sourceURL=webpack://topdescriptionservice/./client/GalleryModal/Slider.js?");
 
 /***/ }),
 
@@ -1987,7 +2012,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _DescriptionHalf_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DescriptionHalf.jsx */ \"./client/components/DescriptionHalf.jsx\");\n/* harmony import */ var _StyledComponents_CardComponentStyle_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StyledComponents/CardComponentStyle.js */ \"./client/components/StyledComponents/CardComponentStyle.js\");\n/* harmony import */ var _GalleryModal_Slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../GalleryModal/Slider.js */ \"./client/GalleryModal/Slider.js\");\n/* harmony import */ var _StyledComponents_PrimaryContainer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StyledComponents/PrimaryContainer.js */ \"./client/components/StyledComponents/PrimaryContainer.js\");\n/* harmony import */ var _GalleryModal_ImageGallery_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../GalleryModal/ImageGallery.jsx */ \"./client/GalleryModal/ImageGallery.jsx\");\n/* harmony import */ var _GalleryModal_BigSlider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../GalleryModal/BigSlider.js */ \"./client/GalleryModal/BigSlider.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n // import Gallery from '../GalleryModal/GalleryHalf.jsx';\n\n\n\n\n\nvar App = /*#__PURE__*/function (_React$Component) {\n  _inherits(App, _React$Component);\n\n  var _super = _createSuper(App);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      data: [],\n      showSlider: false,\n      showImageGallery: false,\n      index: window.location.pathname.slice(1, 3)\n    };\n    _this.showModalGallery = _this.showModalGallery.bind(_assertThisInitialized(_this));\n    _this.showFunc = _this.showFunc.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      var _this2 = this;\n\n      console.log('id from app ===> ', this.state.index);\n      axios__WEBPACK_IMPORTED_MODULE_0___default().get(\"api/listings/\".concat(this.state.index, \"/carousel\")).then(function (response) {\n        _this2.setState({\n          data: response.data[0]\n        });\n      })[\"catch\"](function (error) {\n        console.log(error);\n      });\n    }\n  }, {\n    key: \"showModalGallery\",\n    value: function showModalGallery(change) {\n      this.setState({\n        showImageGallery: change\n      });\n    }\n  }, {\n    key: \"showFunc\",\n    value: function showFunc(change) {\n      console.log('fromSliderFuncApp ==> ', this.state);\n      this.setState({\n        showSlider: change\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      if (!this.state.data) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", null, \"Loading\");\n      } else if (this.state.data && !this.state.showImageGallery && !this.state.showSlider) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_StyledComponents_PrimaryContainer_js__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_StyledComponents_CardComponentStyle_js__WEBPACK_IMPORTED_MODULE_3__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_DescriptionHalf_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n          data: this.state.data\n        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_GalleryModal_Slider_js__WEBPACK_IMPORTED_MODULE_4__.default, {\n          data: this.state.data.gallery,\n          showModalGallery: this.showModalGallery,\n          showFunc: this.showFunc\n        }));\n      } else if (this.state.showImageGallery) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_GalleryModal_ImageGallery_jsx__WEBPACK_IMPORTED_MODULE_6__.default, {\n          data: this.state.data.gallery,\n          showModalGallery: this.showModalGallery\n        });\n      } else if (this.state.data && this.state.showSlider) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_GalleryModal_BigSlider_js__WEBPACK_IMPORTED_MODULE_7__.default, {\n          data: this.state.data.gallery,\n          showModalGallery: this.showModalGallery,\n          showFunc: this.showFunc\n        });\n      }\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_1__.Component);\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://topdescriptionservice/./client/components/app.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var _DescriptionHalf_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DescriptionHalf.jsx */ \"./client/components/DescriptionHalf.jsx\");\n/* harmony import */ var _StyledComponents_CardComponentStyle_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StyledComponents/CardComponentStyle.js */ \"./client/components/StyledComponents/CardComponentStyle.js\");\n/* harmony import */ var _GalleryModal_Slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../GalleryModal/Slider.js */ \"./client/GalleryModal/Slider.js\");\n/* harmony import */ var _StyledComponents_PrimaryContainer_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StyledComponents/PrimaryContainer.js */ \"./client/components/StyledComponents/PrimaryContainer.js\");\n/* harmony import */ var _GalleryModal_ImageGallery_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../GalleryModal/ImageGallery.jsx */ \"./client/GalleryModal/ImageGallery.jsx\");\n/* harmony import */ var _GalleryModal_BigSlider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../GalleryModal/BigSlider.js */ \"./client/GalleryModal/BigSlider.js\");\nfunction _typeof(obj) { \"@babel/helpers - typeof\"; if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _isNativeReflectConstruct() { if (typeof Reflect === \"undefined\" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === \"function\") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\n\n\n\n\n\n\n\n\n\nvar App = /*#__PURE__*/function (_React$Component) {\n  _inherits(App, _React$Component);\n\n  var _super = _createSuper(App);\n\n  function App(props) {\n    var _this;\n\n    _classCallCheck(this, App);\n\n    _this = _super.call(this, props);\n    _this.state = {\n      data: [],\n      showSlider: false,\n      showImageGallery: false,\n      index: window.location.pathname.slice(1, 3)\n    };\n    _this.showModalGallery = _this.showModalGallery.bind(_assertThisInitialized(_this));\n    _this.showFunc = _this.showFunc.bind(_assertThisInitialized(_this));\n    return _this;\n  }\n\n  _createClass(App, [{\n    key: \"componentDidMount\",\n    value: function componentDidMount() {\n      var _this2 = this;\n\n      axios__WEBPACK_IMPORTED_MODULE_0___default().get(\"api/listings/\".concat(this.state.index, \"/carousel\")).then(function (response) {\n        _this2.setState({\n          data: response.data[0]\n        });\n      })[\"catch\"](function (error) {\n        console.log(error);\n      });\n    }\n  }, {\n    key: \"showModalGallery\",\n    value: function showModalGallery(change) {\n      this.setState({\n        showImageGallery: change\n      });\n    }\n  }, {\n    key: \"showFunc\",\n    value: function showFunc(change) {\n      console.log('fromSliderFuncApp ==> ', this.state);\n      this.setState({\n        showSlider: change\n      });\n    }\n  }, {\n    key: \"render\",\n    value: function render() {\n      if (!this.state.data) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(\"div\", null, \"Loading\");\n      } else if (this.state.data && !this.state.showImageGallery && !this.state.showSlider) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_StyledComponents_PrimaryContainer_js__WEBPACK_IMPORTED_MODULE_5__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_StyledComponents_CardComponentStyle_js__WEBPACK_IMPORTED_MODULE_3__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_DescriptionHalf_jsx__WEBPACK_IMPORTED_MODULE_2__.default, {\n          data: this.state.data\n        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_GalleryModal_Slider_js__WEBPACK_IMPORTED_MODULE_4__.default, {\n          data: this.state.data.gallery,\n          showModalGallery: this.showModalGallery,\n          showFunc: this.showFunc\n        }));\n      } else if (this.state.showImageGallery) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_GalleryModal_ImageGallery_jsx__WEBPACK_IMPORTED_MODULE_6__.default, {\n          data: this.state.data.gallery,\n          showModalGallery: this.showModalGallery\n        });\n      } else if (this.state.data && this.state.showSlider) {\n        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_GalleryModal_BigSlider_js__WEBPACK_IMPORTED_MODULE_7__.default, {\n          data: this.state.data.gallery,\n          showModalGallery: this.showModalGallery,\n          showFunc: this.showFunc\n        });\n      }\n    }\n  }]);\n\n  return App;\n}(react__WEBPACK_IMPORTED_MODULE_1__.Component);\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n\n//# sourceURL=webpack://topdescriptionservice/./client/components/app.jsx?");
 
 /***/ }),
 
@@ -2011,6 +2036,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
   \**********************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 103:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2108,6 +2134,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \*********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 65:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -2121,6 +2148,7 @@ eval("/*\nobject-assign\n(c) Sindre Sorhus\n@license MIT\n*/\n\n\n/* eslint-disa
   \***************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 102:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2134,6 +2162,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 38:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
@@ -2147,6 +2176,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \******************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__ */
+/*! CommonJS bailout: module.exports is used directly at 14:2-16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE file in the root directory of this source tree.\n */\n\nif (true) {\n  var ReactIs = __webpack_require__(/*! react-is */ \"./node_modules/prop-types/node_modules/react-is/index.js\");\n\n  // By explicitly using `prop-types` you are opting into new development behavior.\n  // http://fb.me/prop-types-in-prod\n  var throwOnDirectAccess = true;\n  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ \"./node_modules/prop-types/factoryWithTypeCheckers.js\")(ReactIs.isElement, throwOnDirectAccess);\n} else {}\n\n\n//# sourceURL=webpack://topdescriptionservice/./node_modules/prop-types/index.js?");
@@ -2159,6 +2189,7 @@ eval("/**\n * Copyright (c) 2013-present, Facebook, Inc.\n *\n * This source cod
   \*************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -2516,6 +2547,16 @@ eval("/** @license React v0.20.1\n * scheduler-tracing.development.js\n *\n * Co
 /*! export unstable_wrapCallback [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
 /*! runtime requirements: __webpack_exports__ */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 52:26-46 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 125:13-33 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 149:24-44 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 193:15-35 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 548:28-48 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 565:25-45 */
+/*! CommonJS bailout: exports.unstable_shouldYield(...) prevents optimization as exports is passed as call context at 578:74-102 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 591:20-40 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 695:20-40 */
+/*! CommonJS bailout: exports.unstable_now(...) prevents optimization as exports is passed as call context at 804:24-44 */
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
@@ -2585,6 +2626,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \********************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
 /***/ ((module) => {
 
 eval("//\n\nmodule.exports = function shallowEqual(objA, objB, compare, compareContext) {\n  var ret = compare ? compare.call(compareContext, objA, objB) : void 0;\n\n  if (ret !== void 0) {\n    return !!ret;\n  }\n\n  if (objA === objB) {\n    return true;\n  }\n\n  if (typeof objA !== \"object\" || !objA || typeof objB !== \"object\" || !objB) {\n    return false;\n  }\n\n  var keysA = Object.keys(objA);\n  var keysB = Object.keys(objB);\n\n  if (keysA.length !== keysB.length) {\n    return false;\n  }\n\n  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);\n\n  // Test for A's keys different from B.\n  for (var idx = 0; idx < keysA.length; idx++) {\n    var key = keysA[idx];\n\n    if (!bHasOwnProperty(key)) {\n      return false;\n    }\n\n    var valueA = objA[key];\n    var valueB = objB[key];\n\n    ret = compare ? compare.call(compareContext, valueA, valueB, key) : void 0;\n\n    if (ret === false || (ret === void 0 && valueA !== valueB)) {\n      return false;\n    }\n  }\n\n  return true;\n};\n\n\n//# sourceURL=webpack://topdescriptionservice/./node_modules/shallowequal/index.js?");

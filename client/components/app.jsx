@@ -3,7 +3,6 @@ import React from 'react';
 import DescriptionHalf from './DescriptionHalf.jsx';
 import CardComponent from './StyledComponents/CardComponentStyle.js';
 import Slider from '../GalleryModal/Slider.js';
-// import Gallery from '../GalleryModal/GalleryHalf.jsx';
 import PrimaryContainer from './StyledComponents/PrimaryContainer.js';
 import ImageGallery from '../GalleryModal/ImageGallery.jsx';
 import BigSlider from '../GalleryModal/BigSlider.js';
@@ -24,7 +23,7 @@ class App extends React.Component {
     };
 
     componentDidMount(){
-        console.log('id from app ===> ', this.state.index)
+	
 	    Axios.get(`api/listings/${this.state.index}/carousel`)
             .then((response) => {
                 this.setState({
