@@ -12,9 +12,9 @@ app.use(bodyParser.json());
 
 app.use('/:id', express.static('public'));
 
-app.get('/:id/api/listings/:id/carousel', (req, res) => {
-    console.log(req.params.id)
-	dbHelpers.getData(req.params.id)
+app.get('/api/listings/:listing_id/carousel', (req, res) => {
+    console.log(req.params.listing_id)
+	dbHelpers.getData(req.params.listing_id)
      .then((response) => {
           res.send(response);
       }) 

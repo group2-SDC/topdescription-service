@@ -1,7 +1,0 @@
-## Network interfaces
-
-net: 
-  port: 27017
-
-security: 
-  authorization: 'enabled'

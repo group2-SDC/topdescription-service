@@ -26,7 +26,7 @@ class ImageGallery extends React.Component {
                     <XStyle>
                         <FontAwesomeIcon icon={faTimes} onClick={() => this.props.showModalGallery(false)} style={{marginLeft: '98%'}}/>
                     </XStyle>
-          
+                    <div style={{display: 'flex', justifyContent: 'flex-start', zIndex: '100'}}>
                         <div style={{display: 'flex', justifyContent: 'flex-start', marginRight: '0'}}>
                             <SlideStyle2 >
                                     {this.props.data.map(image => 
@@ -35,7 +35,7 @@ class ImageGallery extends React.Component {
                             </SlideStyle2>
                         </div>
                     </div>
-
+                </div>
                 
             );
         };
