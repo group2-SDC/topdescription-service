@@ -43,8 +43,6 @@ class App extends React.Component {
     };
 
     showFunc(change) {
-        console.log('fromSliderFuncApp ==> ', this.state)
-
         this.setState({
             showSlider: change
         })
