@@ -34,7 +34,7 @@ const BigSlider = ({ data, showModalGallery, showFunc }) => {
         setState({
           ...state,
           activeIndex: activeIndex + 1,
-          translate: (activeIndex + 1) * 385
+          translate: (activeIndex + 1) * 850
         });
       };
     
@@ -42,7 +42,7 @@ const BigSlider = ({ data, showModalGallery, showFunc }) => {
         if (activeIndex === 0) {
           return setState({
             ...state,
-            translate: (data.length - 1) * 385,
+            translate: (data.length - 1) * 850,
             activeIndex: data.length - 1
           });
         };
@@ -50,7 +50,7 @@ const BigSlider = ({ data, showModalGallery, showFunc }) => {
         setState({
             ...state,
             activeIndex: activeIndex - 1,
-            translate: (activeIndex - 1) * 385
+            translate: (activeIndex - 1) * 850
           });
         };
 
@@ -115,8 +115,8 @@ const SliderCSSBS = styled.div`
     top: 5%;
     margin: 0 auto;
     overflow: hidden;
-    width: 385px;
-    height: 385px;
+    width: 850px;
+    height: 550px;
     z-index: 5;
     &:hover {
         z-index: 0;
@@ -125,10 +125,10 @@ const SliderCSSBS = styled.div`
 
 const ViewerBS = styled.div`
     position: relative;
-    width: 200;
-    height: 425px;
+    width: 850px;
+    height: 550px;
     z-index: 1;
-    background: yellow;
+    background: black;
 `;
 
 

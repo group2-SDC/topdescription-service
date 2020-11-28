@@ -4,7 +4,8 @@ const CardComponent = styled.section`
     display: flex;
     box-shadow: 1px 1px 2px grey;
     padding-left: 10px;
-    width: 225px;
+    width: 315px;
+    height: 450px;
 `;
 
 export default CardComponent;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Category = styled.section`
-    font-size: 8px;
+    font-size: 12px;
     font-family: Poppins;
     color: black;
     padding-top: 5px;

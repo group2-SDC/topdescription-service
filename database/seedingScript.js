@@ -17,7 +17,7 @@ let createDestinationObject = () => {
             let imageIndexMin = 80;
             let imageIndexMax = 200;
             let imageIndex = Math.floor(Math.random() * (imageIndexMax - imageIndexMin + 1)) + imageIndexMin;
-            arrayOfImages.push(`https://picsum.photos/id/${imageIndex}/385/340`);
+            arrayOfImages.push(`https://picsum.photos/id/${imageIndex}/850/550`);
         }
         return arrayOfImages;
     };
@@ -84,6 +84,6 @@ let createDestinationObject = () => {
     };
 };
 
-createDestinationObject()
+// createDestinationObject()
 
 module.exports = createDestinationObject

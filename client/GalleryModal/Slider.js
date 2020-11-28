@@ -34,7 +34,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
         setState({
           ...state,
           activeIndex: activeIndex + 1,
-          translate: (activeIndex + 1) * 385
+          translate: (activeIndex + 1) * 600
         });
       };
     
@@ -42,7 +42,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
         if (activeIndex === 0) {
           return setState({
             ...state,
-            translate: (data.length - 1) * 385,
+            translate: (data.length - 1) * 600,
             activeIndex: data.length - 1
           });
         };
@@ -50,7 +50,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
         setState({
             ...state,
             activeIndex: activeIndex - 1,
-            translate: (activeIndex - 1) * 385
+            translate: (activeIndex - 1) * 600
           });
         };
 
@@ -66,7 +66,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
                 <SliderCSS>
                     <SliderContent translate={translate} transition={transition}>
                         {data.map(slide => (
-                            <Slide key={slide} content={slide} style={{width: '385px', height: '340px'}}/>
+                            <Slide key={slide} content={slide} style={{width: '600px', height: '450px'}}/>
                             ))}
                     </SliderContent>
                 </SliderCSS>
@@ -111,8 +111,8 @@ const SliderCSS = styled.div`
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    width: 385px;
-    height: 340px;
+    width: 600px;
+    height: 450px;
     z-index: 5;
     &:hover {
         z-index: 0;
@@ -121,8 +121,8 @@ const SliderCSS = styled.div`
 
 const Viewer = styled.div`
     position: relative;
-    width: 385px;
-    height: 340px;
+    width: 600px;
+    height: 450px;
     z-index: 1;
 `;
 

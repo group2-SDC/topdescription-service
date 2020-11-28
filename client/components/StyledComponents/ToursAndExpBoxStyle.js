@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ToursComponent = styled.section`
     display: flexbox;
     margin-top: 12px;
-    font-size: 8px;
+    font-size: 12px;
     font-family: Poppins;
     color: black;
     padding-left: 2px;

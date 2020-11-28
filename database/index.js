@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/fetcher');
+mongoose.connect('mongodb://localhost/fetcher', { useNewUrlParser: true });
 const Promise = require('bluebird');
 
 var db = mongoose.connection;
