@@ -24,7 +24,7 @@ class App extends React.Component {
 
     componentDidMount(){
 	
-	    Axios.get(`api/listings/${this.state.index}/carousel`)
+	    Axios.get(`/api/listings/${this.state.index}/carousel`)
             .then((response) => {
                 this.setState({
                     data: response.data[0]

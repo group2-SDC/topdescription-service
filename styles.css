@@ -10,10 +10,6 @@
     line-height: 50px;
 }
 
-.ratingIcon {
-    display: flexbox;
-    justify-content: right;
-}
 
 h1 {
     size: 120px;
