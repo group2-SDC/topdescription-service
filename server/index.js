@@ -6,14 +6,16 @@ const app = express();
 const port = 3000;
 const morgan = require('morgan')
 const compression = require('compression')
+const path = require('path')
 
 app.use(morgan('dev'));
 app.use(compression());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 
-app.use('/:listing_id', express.static('public'));
+app.use('/:listing_id', express.static(PUBLIC_DIR));
 
 app.get('/api/listings/:listing_id/carousel', (req, res) => {
     console.log(req.params.listing_id)
