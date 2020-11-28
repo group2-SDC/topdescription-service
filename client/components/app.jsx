@@ -15,7 +15,7 @@ class App extends React.Component {
             data: [],
             showSlider: false,
             showImageGallery: false,
-	        index: window.location.pathname.slice(1,3)
+	        index: window.location.pathname.slice(1, window.location.pathname.slice - 1)
         };
 
         this.showModalGallery = this.showModalGallery.bind(this);
