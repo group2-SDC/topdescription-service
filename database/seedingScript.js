@@ -84,6 +84,5 @@ let createDestinationObject = () => {
     };
 };
 
-// createDestinationObject()
 
 module.exports = createDestinationObject
