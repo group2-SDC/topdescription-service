@@ -17,7 +17,7 @@ const Slide = (props) => {
     }
 
 const SlideStyle = styled.div`
-    height: 100;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;

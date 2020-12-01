@@ -111,8 +111,8 @@ const SliderCSS = styled.div`
     position: relative;
     margin: 0 auto;
     overflow: hidden;
-    width: 600px;
-    height: 450px;
+    width: 700px;
+    height: 580px;
     z-index: 5;
     &:hover {
         z-index: 0;
@@ -121,8 +121,8 @@ const SliderCSS = styled.div`
 
 const Viewer = styled.div`
     position: relative;
-    width: 600px;
-    height: 450px;
+    width: 700px;
+    height: 580px;
     z-index: 1;
 `;
 
