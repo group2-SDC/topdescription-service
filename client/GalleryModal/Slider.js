@@ -34,7 +34,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
         setState({
           ...state,
           activeIndex: activeIndex + 1,
-          translate: (activeIndex + 1) * 600
+          translate: (activeIndex + 1) * 700
         });
       };
     
@@ -42,7 +42,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
         if (activeIndex === 0) {
           return setState({
             ...state,
-            translate: (data.length - 1) * 600,
+            translate: (data.length - 1) * 700,
             activeIndex: data.length - 1
           });
         };
@@ -50,7 +50,7 @@ const Slider = ({ data, showModalGallery, showFunc }) => {
         setState({
             ...state,
             activeIndex: activeIndex - 1,
-            translate: (activeIndex - 1) * 600
+            translate: (activeIndex - 1) * 700
           });
         };
 
