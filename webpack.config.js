@@ -1,13 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: {
-    main: './client/index.js',
-    vendor: ['styled-components'],
-  },
+  entry: './client/index.js',
   mode: 'production',
   output: {
-    filename: '[name].[hash:8].js.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
   },
   module: {
@@ -23,11 +20,5 @@ module.exports = {
         }
       }
     ]
-  },
-  optimization: {
-    splitChunks: {
-      minChunks: Infinity,
-      name: false
-    }
   }
 }; 
