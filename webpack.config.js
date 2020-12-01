@@ -30,7 +30,7 @@ module.exports = {
       name: false
     },
     runtimeChunk: {
-      name: 'vendor'
+      name: './client/index.js'
     }
   }
 }; 
