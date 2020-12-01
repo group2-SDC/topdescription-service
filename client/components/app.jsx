@@ -62,7 +62,6 @@ class App extends React.Component {
                     </CardComponent>
                     <Slider data={this.state.data.gallery} showModalGallery={this.showModalGallery} showFunc={this.showFunc} />
                 </PrimaryContainer>
-
             );
         } else if (this.state.showImageGallery) {
             return (

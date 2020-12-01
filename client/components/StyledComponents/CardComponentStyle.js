@@ -5,7 +5,7 @@ const CardComponent = styled.section`
     box-shadow: 1px 1px 2px grey;
     padding-left: 10px;
     width: 315px;
-    height: 450px;
+    height: 525px;
 `;
 
 export default CardComponent;
