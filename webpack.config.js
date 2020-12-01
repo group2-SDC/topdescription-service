@@ -28,9 +28,6 @@ module.exports = {
     splitChunks: {
       minChunks: Infinity,
       name: false
-    },
-    runtimeChunk: {
-      name: './client/index.js'
     }
   }
 }; 
