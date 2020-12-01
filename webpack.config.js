@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './client/index.js',
+  entry: {
+    main: './client/index.js',
+    vendor: ['styled-components'],
+  },
   mode: 'production',
   output: {
     filename: 'bundle.js',
@@ -20,5 +23,14 @@ module.exports = {
         }
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      minChunks: Infinity,
+      name: true
+    },
+    runtimeChunk: {
+      name: 'vendor'
+    }
   }
 }; 
