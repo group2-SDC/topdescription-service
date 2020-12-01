@@ -7,7 +7,7 @@ module.exports = {
   },
   mode: 'production',
   output: {
-    filename: '[name].js',
+    filename: '[name].[hash:8].js.js',
     path: path.resolve(__dirname, 'public'),
   },
   module: {
