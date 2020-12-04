@@ -8,7 +8,7 @@ const Arrows = ({ direction, handleClick }) => (
     <div>
         <div onClick={handleClick} >
             {direction === 'right' ? <FontAwesomeIcon icon={faArrowRight} /> : <FontAwesomeIcon icon={faArrowLeft} /> }    
-        </div >
+        </div>
     </div>
 
 

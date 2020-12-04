@@ -26,6 +26,7 @@ class App extends React.Component {
 	
 	    Axios.get(`/api/listings/${this.state.index}/carousel`)
             .then((response) => {
+                console.log(response);
                 this.setState({
                     data: response.data[0]
                 });

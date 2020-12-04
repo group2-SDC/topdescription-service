@@ -2,7 +2,6 @@ const helperFuncs = require('./index.js');
 const faker = require('faker');
 const { image } = require('faker');
 
-
 let createDestinationObject = () => {
 
     let generateImages = () => {
@@ -83,5 +82,7 @@ let createDestinationObject = () => {
             helperFuncs.save(destinationObject)
     };
 };
+//uncomment this when dropping database but comment out after immediately
+// createDestinationObject();
 
 module.exports = createDestinationObject
