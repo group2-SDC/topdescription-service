@@ -35,7 +35,9 @@ const startWriting = (writeStream, encoding, done) => {
       let canWrite = true;
       
       do {
-
+        if (listingID % (Math.floor(10000000 / 10)) === 1000) {
+          console.log(`${listingID} left`);
+        }
         let post = createPost();
         //check if at end of listingID
         if (listingID === 0) {
@@ -59,7 +61,7 @@ const startWriting = (writeStream, encoding, done) => {
   }
   
   //write our `header` line before we invoke the loop
-  writeStream.write(`listing_id,gallery\n`, 'utf-8');
+  writeStream.write(`listing_id,imageURL\n`, 'utf-8');
   //invoke startWriting and pass callback
   startWriting(writeStream, 'utf-8', () => {
     writeStream.end();

@@ -17,8 +17,8 @@ DROP TABLE IF EXISTS listing;
 CREATE TABLE listing (
     id SERIAL PRIMARY KEY,
     name VARCHAR,
-    overview TEXT,
     address VARCHAR,
+    overview VARCHAR,
     openNow VARCHAR,
     suggestedDuration INTEGER,
     reviewsNum INTEGER,
@@ -31,10 +31,8 @@ CREATE TABLE listing (
 --gallery table
 CREATE TABLE gallery (
     id SERIAL PRIMARY KEY,
-    imageURL TEXT,
-    CONSTRAINT listing_id 
-        FOREIGN KEY (id)
-        REFERENCES listing(id)
+    listing_id INTEGER NOT NULL,
+    imageURL VARCHAR(255)
 );
 
 -- psql postgres < schema.sql

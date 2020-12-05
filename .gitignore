@@ -1,4 +1,9 @@
 node_modules
 carousel.pem
+
+#instructions
+*.sh
+
+#large files
 *.csv
 *.jpg

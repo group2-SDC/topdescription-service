@@ -41,7 +41,7 @@ let createPost = () => {
     const suggestedDuration = getRandomNumber();
     const openNow = generateHoursOfOperation();
 
-    return `${name},${address},${overview},${openNow},${suggestedDuration},${reviewsNum},${avgRating},${userHeart},${toursNum},${travelersChoice}\n`
+    return `"${name}","${address}","${overview}",${openNow},${suggestedDuration},${reviewsNum},${avgRating},${userHeart},${toursNum},${travelersChoice}\n`
 
 };
 
@@ -50,8 +50,10 @@ const startWriting = (writeStream, encoding, done) => {
 
     function writing () {
       let canWrite = true;
-
-      do {
+       do {
+        if (i % (Math.floor(lines / 10)) === 10000) {
+          console.log(`${i} lines left`);
+        }
         i--;
         let post = createPost();
         //check if i === 0 so we would write and call `done`
