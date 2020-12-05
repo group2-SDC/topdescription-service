@@ -1,71 +1,68 @@
 // generator.js
 const fs = require('fs')
 const argv = require('yargs').argv
-// const helperFuncs = require('./index.js.js');
 const faker = require('faker');
 const { image } = require('faker');
 
-const lines = argv.lines || 10
+const lines = argv.lines || 10;
 const filename = argv.output || 'galleryPosts.csv'
-const writeStream = fs.createWriteStream(filename)
-
+const writeStream = fs.createWriteStream(filename);
+let listingID = 10000000;
 
 let createPost = () => {
     //need to fix this function and whole createpost to render randomlisting_id and gallery url 
-    let randomListingID = () => {
-        let max = 100;
-        let min = 1;
 
-        let listingID = Math.floor(Math.random() * (max - min + 1)) + min;
-        return listingID;
-    }
+    let imageNum = (Math.floor(Math.random() * (1000 - 1 + 1)) + 1).toString().padStart(4, 0);
 
-    // let generateImages = () => {
-    //     let max = 30;
-    //     let min = 5;
-
-    //     let imageCount = Math.floor(Math.random() * (max - min + 1)) + min;
-        
-    //     let arrayOfImages = [];
-        
-    //     for(i = 0; i < imageCount; i++){
-    //         let imageIndexMin = 80;
-    //         let imageIndexMax = 200;
-    //         let imageIndex = Math.floor(Math.random() * (imageIndexMax - imageIndexMin + 1)) + imageIndexMin;
-    //         arrayOfImages.push(`https://picsum.photos/id/${imageIndex}/850/580`);
-    //     }
-    //     return arrayOfImages;
-    // };
-
-    const listing_id = randomListingID();   
     //find way to pull s3 url into gallery that is randomized
-    // const gallery = ;
+    const listing_id = listingID;
+    const gallery = `https://tripadvisor-carousel-dump.s3-us-west-2.amazonaws.com/galleryImages/${imageNum}.jpg;`
+    // galleryNum--;
 
     return `${listing_id},${gallery}\n`
 
 };
 
 const startWriting = (writeStream, encoding, done) => {
-    let i = lines;
+    // let i = lines;
+    // let listingID = 11;
+    let galleryNum = 0;
 
     function writing () {
       let canWrite = true;
-
+      
       do {
-        i--
+        // i--;
+        if (galleryNum === 0) {
+            listingID--;
+            galleryNum = Math.floor(Math.random() * (15 - 5 + 1)) + 5; 
+          }; 
+
         let post = createPost();
-        //check if i === number of rows needed to end writing
-        if (i === 10) {
+        //check if at end of listingID
+        if (listingID === 0) {
           // we are done so fire callback
-          writeStream.write(post, encoding, done)
+          writeStream.write(post, encoding, done);
         } else {
           // we are not done so don't fire callback
-          writeStream.write(post, encoding)
+          writeStream.write(post, encoding);
+          galleryNum--;
+
+          //monitor data accumulation
+          if (listingID === 100000) {
+              console.log('at hun thou');
+          }
+          if (listingID === 1000000) {
+            console.log('at mill');
+          }
+            if (listingID === 10000000) {
+                console.log('at ten mill');
+          }
         }
         //else call write and continue looping
-      } while (i > 0 && canWrite)
+      } while (listingID > 0 && canWrite)
 
-      if (i > 0 && !canWrite) {
+      if (listingID > 0 && !canWrite) {
         //our buffer for stream filled and need to wait for drain
         // Write some more once it drains.
         writeStream.once('drain', writing);

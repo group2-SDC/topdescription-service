@@ -5,7 +5,7 @@ const argv = require('yargs').argv
 const faker = require('faker');
 const { image } = require('faker');
 
-const lines = argv.lines || 10
+const lines = argv.lines || 10000000
 const filename = argv.output || 'listingsPosts.csv'
 const writeStream = fs.createWriteStream(filename)
 
@@ -15,13 +15,6 @@ let createPost = () => {
     let max = 12;
     let min = 5;
     let tourCount = Math.floor(Math.random() * (max - min + 1)) + min;
-    let generateTours = () => {
-        let arrayOfTours = [];
-        for(i = 0; i < tourCount; i++){
-            arrayOfTours.push('The ' + faker.hacker.adjective() + ' ' + faker.hacker.noun() + ' ' + 'exerience!');
-        };
-        return arrayOfTours;
-    };
 
     let generateHoursOfOperation = () => {
         let hoursOfOperation = ['', '8:00 AM - 10:00 PM', '6:00 AM - 8:00 PM', '8:00 AM - 5:00 PM', '10:00 AM - 11:00 PM'];
@@ -44,7 +37,6 @@ let createPost = () => {
     const avgRating = getRandomNumber();
     const overview = faker.lorem.paragraph();
     const address = faker.address.streetAddress() + ' ' + faker.address.city() + ', ' + faker.address.state() + ' ' + faker.address.zipCode();
-    // const gallery = generateImages();
     const toursNum = tourCount;
     const suggestedDuration = getRandomNumber();
     const openNow = generateHoursOfOperation();
@@ -60,15 +52,25 @@ const startWriting = (writeStream, encoding, done) => {
       let canWrite = true;
 
       do {
-        i--
+        i--;
         let post = createPost();
         //check if i === 0 so we would write and call `done`
-        if (i === 10) {
+        if (i === 0) {
           // we are done so fire callback
           writeStream.write(post, encoding, done)
         } else {
           // we are not done so don't fire callback
-          writeStream.write(post, encoding)
+          writeStream.write(post, encoding);
+            //monitor data accumulation
+          if (listingID === 100000) {
+              console.log('at hun thou');
+          }
+          if (listingID === 1000000) {
+            console.log('at mill');
+          }
+          if (listingID === 10000000) {
+                console.log('at ten mill');
+          }
         }
         //else call write and continue looping
       } while (i > 0 && canWrite)
@@ -89,3 +91,5 @@ const startWriting = (writeStream, encoding, done) => {
     writeStream.end()
   });
   
+//post on terminal to check
+//node listingsPosts_datagenerator.js --output listingsPosts.csv

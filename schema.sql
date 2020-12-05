@@ -11,6 +11,16 @@ DROP TABLE IF EXISTS gallery;
 DROP TABLE IF EXISTS listing;
 
 
+
+--gallery table
+CREATE TABLE gallery (
+    id SERIAL PRIMARY KEY,
+    imageURL TEXT,
+    CONSTRAINT listing_id 
+        FOREIGN KEY (id)
+        REFERENCES listing(id)
+);
+
 --listing table 
 CREATE TABLE listing (
     id SERIAL PRIMARY KEY,
@@ -26,11 +36,4 @@ CREATE TABLE listing (
     travelersChoice BOOLEAN
 );
 
---gallery table
-CREATE TABLE gallery (
-    id SERIAL PRIMARY KEY,
-    imageURL TEXT,
-    CONSTRAINT listing_id 
-        FOREIGN KEY (id)
-        REFERENCES listing(id)
-);
+-- psql postgres < schema.sql
