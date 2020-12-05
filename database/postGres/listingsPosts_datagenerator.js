@@ -41,7 +41,7 @@ let createPost = () => {
     const suggestedDuration = getRandomNumber();
     const openNow = generateHoursOfOperation();
 
-    return `${name},${address},${overview},${openNow},${suggestedDuration},${reviewsNum},${avgRating},${userHeart},${toursNum},${travelersChoice}\n`
+    return `"${name}","${address}","${overview}",${openNow},${suggestedDuration},${reviewsNum},${avgRating},${userHeart},${toursNum},${travelersChoice}\n`
 
 };
 
@@ -50,8 +50,10 @@ const startWriting = (writeStream, encoding, done) => {
 
     function writing () {
       let canWrite = true;
-
-      do {
+       do {
+        if (i % (Math.floor(lines / 10)) === 10000) {
+          console.log(`${i} lines left`);
+        }
         i--;
         let post = createPost();
         //check if i === 0 so we would write and call `done`
@@ -60,17 +62,8 @@ const startWriting = (writeStream, encoding, done) => {
           writeStream.write(post, encoding, done)
         } else {
           // we are not done so don't fire callback
-          writeStream.write(post, encoding);
+          canWrite = writeStream.write(post, encoding);
             //monitor data accumulation
-          if (listingID === 100000) {
-              console.log('at hun thou');
-          }
-          if (listingID === 1000000) {
-            console.log('at mill');
-          }
-          if (listingID === 10000000) {
-                console.log('at ten mill');
-          }
         }
         //else call write and continue looping
       } while (i > 0 && canWrite)
@@ -93,3 +86,5 @@ const startWriting = (writeStream, encoding, done) => {
   
 //post on terminal to check
 //node listingsPosts_datagenerator.js --output listingsPosts.csv
+
+//first generating took 10 minutes
