@@ -60,17 +60,8 @@ const startWriting = (writeStream, encoding, done) => {
           writeStream.write(post, encoding, done)
         } else {
           // we are not done so don't fire callback
-          writeStream.write(post, encoding);
+          canWrite = writeStream.write(post, encoding);
             //monitor data accumulation
-          if (listingID === 100000) {
-              console.log('at hun thou');
-          }
-          if (listingID === 1000000) {
-            console.log('at mill');
-          }
-          if (listingID === 10000000) {
-                console.log('at ten mill');
-          }
         }
         //else call write and continue looping
       } while (i > 0 && canWrite)
@@ -93,3 +84,5 @@ const startWriting = (writeStream, encoding, done) => {
   
 //post on terminal to check
 //node listingsPosts_datagenerator.js --output listingsPosts.csv
+
+//first generating took 10 minutes
