@@ -19,8 +19,6 @@ let createPost = () => {
 
     let imageNum = (Math.floor(Math.random() * (1000 - 1 + 1)) + 1).toString().padStart(4, 0);
 
-    //find way to pull s3 url into gallery that is randomized
-    // const listing_id = listingID;
     const gallery = `https://tripadvisor-carousel-dump.s3-us-west-2.amazonaws.com/galleryImages/${imageNum}.jpg`;
     galleryNum--;
 

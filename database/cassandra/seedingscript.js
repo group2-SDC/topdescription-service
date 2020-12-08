@@ -1,16 +1,32 @@
-// generator.js
 const fs = require('fs')
 const argv = require('yargs').argv
 // const helperFuncs = require('./index.js.js');
 const faker = require('faker');
 const { image } = require('faker');
 
-const lines = argv.lines || 10
-const filename = argv.output || 'listingsPosts.csv'
+const lines = argv.lines || 10000000
+const filename = argv.output || 'cassandraData.csv'
 const writeStream = fs.createWriteStream(filename)
+let id = 0; 
 
 
 let createPost = () => {
+
+
+    let generateImages = () => {
+
+        let galleryNum = Math.floor(Math.random() * 11) + 5; 
+        
+        let arrayOfImages = [];
+        
+        let max = 1000;
+        let min = 1;
+        for(i = 0; i < galleryNum; i++){
+            let imageNum = (Math.floor(Math.random() * (max - min + 1)) + min).toString().padStart(4, 0);
+            arrayOfImages.push(`https://tripadvisor-carousel-dump.s3-us-west-2.amazonaws.com/galleryImages/${imageNum}.jpg`);
+        }
+        return arrayOfImages;
+    };
 
     let max = 12;
     let min = 5;
@@ -29,7 +45,8 @@ let createPost = () => {
         let min = 0;
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-   
+
+    id ++;
     const name = faker.address.country();
     const travelersChoice = faker.random.boolean();
     const userHeart = faker.random.boolean();
@@ -40,8 +57,10 @@ let createPost = () => {
     const toursNum = tourCount;
     const suggestedDuration = getRandomNumber();
     const openNow = generateHoursOfOperation();
+    const gallery = generateImages();
 
-    return `"${name}","${address}","${overview}",${openNow},${suggestedDuration},${reviewsNum},${avgRating},${userHeart},${toursNum},${travelersChoice}\n`
+
+    return `${id}|${name}|${address}|${overview}|${openNow}|${suggestedDuration}|${reviewsNum}|${avgRating}|${userHeart}|${toursNum}|${travelersChoice}|[${gallery}]\n`
 
 };
 
@@ -51,7 +70,7 @@ const startWriting = (writeStream, encoding, done) => {
     function writing () {
       let canWrite = true;
        do {
-        if (i % (Math.floor(lines / 10)) === 10000) {
+        if (i % (Math.floor(lines / 10)) === 1000) {
           console.log(`${i} lines left`);
         }
         i--;
@@ -78,7 +97,7 @@ const startWriting = (writeStream, encoding, done) => {
   }
   
   //write our `header` line before we invoke the loop
-  writeStream.write(`name,address,overview,openNow,suggestedDuration,reviewsNum,avgRating,userHeart,toursNum,travelersChoice\n`, 'utf-8');
+  writeStream.write(`id|name|address|overview|openNow|suggestedDuration|reviewsNum|avgRating|userHeart|toursNum|travelersChoice|gallery\n`, 'utf-8');
   //invoke startWriting and pass callback
   startWriting(writeStream, 'utf-8', () => {
     writeStream.end()

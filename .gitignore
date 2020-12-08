@@ -7,3 +7,7 @@ carousel.pem
 #large files
 *.csv
 *.jpg
+
+#schemas
+.sql
+.cql
