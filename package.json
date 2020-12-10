@@ -10,7 +10,8 @@
     "test": "jest spec/test.js",
     "imageSeed": "node database/galleryImages/imageseed.js",
     "seedlistings": "bash seed_listings.sh",
-    "seedgallery": "bash seed_gallery.sh"
+    "seedgallery": "bash seed_gallery.sh",
+    "cassandraseed": "bash seed_cassandra.sh"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "axios": "^0.21.0",
     "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
+    "cassandra": "^0.1.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "faker": "^5.1.0",
@@ -41,6 +43,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
     "parseurl": "^1.3.3",
+    "pg": "^8.5.1",
     "postgres": "^1.0.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

@@ -1,11 +1,24 @@
-// const { Pool } = require('pg');
+const { Pool } = require('pg');
 
-// //use pool for multiple concurrent requests
-// const pool = new Pool();
+//use pool for multiple concurrent requests
+const pool = new Pool({
+    database: 'tripadvisorinfo'
+});
 
-// pool.query('SELECT * FROM LISTINGS', (err, res) => {
-//   console.log(err, res);
-//   pool.end();
-// });
+pool.connect(); 
 
-//not used for now
+
+const getListingInfo = (query, callback) => {
+pool
+  .query(query)
+  .then((res) => {
+      callback(res.rows);
+  })
+  .catch(e=> {
+      console.log(e);
+  })
+};
+
+module.exports = {
+    getListingInfo
+};
