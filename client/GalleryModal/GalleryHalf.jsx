@@ -18,7 +18,7 @@ class Gallery extends React.Component {
 
 
     nextImage(){
-        let length = this.props.data.gallery.length - 1;
+        let length = this.props.data.imageurl.length - 1;
         if(this.state.currentImageIndx < length){
             this.setState({
                 currentImageIndx: this.state.currentImageIndx + 1
@@ -32,7 +32,7 @@ class Gallery extends React.Component {
 
     previousImage(){
         if(this.state.currentImageIndx === 0){
-            let length = this.props.data.gallery.length - 1
+            let length = this.props.data.imageurl.length - 1
             this.setState({
                 currentImageIndx: length
             });
@@ -44,14 +44,14 @@ class Gallery extends React.Component {
     };
 
     render() {
-        if (!this.props.data.gallery) {
+        if (!this.props.data.imageurl) {
             return (
                 <div>Loading</div>
             );
         } else {
             return (
                 <GalleryModal>
-                    <img src={this.props.data.gallery[this.state.currentImageIndx]} height="310px" width="360px" padding-left="10px"></img>
+                    <img src={this.props.data.imageurl[this.state.currentImageIndx]} height="310px" width="360px" padding-left="10px"></img>
                     <NextandPrevious>
                         <button onClick={() => {this.previousImage()}}>Previous</button>
                     </NextandPrevious>
