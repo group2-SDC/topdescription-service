@@ -1,0 +1,16 @@
+node_modules
+
+*.pem
+
+*.sh
+
+*.csv
+*.jpg
+*.jpeg
+
+.sql
+.cql
+
+/server/test.js
+
+newrelic_agent.log

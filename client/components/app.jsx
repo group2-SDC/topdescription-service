@@ -26,7 +26,6 @@ class App extends React.Component {
 	
 	    Axios.get(`/api/listings/${this.state.index}/carousel`)
             .then((response) => {
-                console.log(response);
                 this.setState({
                     data: response.data[0]
                 });
@@ -49,7 +48,7 @@ class App extends React.Component {
         })
     };
 
-
+    
     render() {
         if (!this.state.data) {
             return (
@@ -61,16 +60,16 @@ class App extends React.Component {
                     <CardComponent>
                         <DescriptionHalf data={this.state.data} />
                     </CardComponent>
-                    <Slider data={this.state.data.gallery} showModalGallery={this.showModalGallery} showFunc={this.showFunc} />
+                    <Slider data={this.state.data.imageurl} showModalGallery={this.showModalGallery} showFunc={this.showFunc} />
                 </PrimaryContainer>
             );
         } else if (this.state.showImageGallery) {
             return (
-                <ImageGallery data={this.state.data.gallery} showModalGallery={this.showModalGallery} />
+                <ImageGallery data={this.state.data.imageurl} showModalGallery={this.showModalGallery} />
             );
         } else if(this.state.data && this.state.showSlider){
             return (            
-                <BigSlider data={this.state.data.gallery} showModalGallery={this.showModalGallery} showFunc={this.showFunc}/>
+                <BigSlider data={this.state.data.imageurl} showModalGallery={this.showModalGallery} showFunc={this.showFunc}/>
             )
         }
     };

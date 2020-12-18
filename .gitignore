@@ -1,5 +1,5 @@
 node_modules
-carousel.pem
+*.pem
 
 #instructions
 *.sh
@@ -11,3 +11,16 @@ carousel.pem
 #schemas
 .sql
 .cql
+
+#newreclic
+newrelic.js
+newrelic_agent.log
+
+#k6
+k6script.js
+
+#key
+*.pem
+
+#
+hrsea13

@@ -5,17 +5,19 @@ const faker = require('faker');
 const { image } = require('faker');
 
 // const lines = argv.lines || 10;
-const filename = argv.output || 'galleryPosts.csv'
+const filename = argv.output || 'galleryPosts4.csv'
 const writeStream = fs.createWriteStream(filename);
-let listingID = 0;
+let listingID = 6000000;
 let galleryNum = 0;
+
 
 let createPost = () => {
     //need to fix this function and whole createpost to render randomlisting_id and gallery url 
-    if (galleryNum === 0 && listingID < 11) {
+    if (galleryNum === 0 && listingID < 60000000) {
         listingID++;
         galleryNum = Math.floor(Math.random() * (15 - 5 + 1)) + 5; 
       }; 
+
 
     let imageNum = (Math.floor(Math.random() * (1000 - 1 + 1)) + 1).toString().padStart(4, 0);
 
@@ -31,14 +33,13 @@ const startWriting = (writeStream, encoding, done) => {
 
     function writing () {
       let canWrite = true;
-      
       do {
         if (listingID % (Math.floor(10000000 / 10)) === 1000) {
           console.log(`${listingID} left`);
         }
         let post = createPost();
         //check if at end of listingID
-        if (listingID === 10) {
+        if (listingID === 10000000) {
           // we are done so fire callback
           writeStream.write(post, encoding, done);
         } else {
@@ -46,9 +47,9 @@ const startWriting = (writeStream, encoding, done) => {
           canWrite = writeStream.write(post, encoding);
         }
         //else call write and continue looping
-      } while (listingID < 11 && canWrite)
+      } while (listingID < 10000000 && canWrite)
 
-      if (listingID < 11 && !canWrite) {
+      if (listingID < 10000000 && !canWrite) {
         // if (listingID > 0) {
         //our buffer for stream filled and need to wait for drain
         // Write some more once it drains.
@@ -66,3 +67,4 @@ const startWriting = (writeStream, encoding, done) => {
   });
   
 //first generating took 3 minutes
+
