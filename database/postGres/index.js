@@ -2,7 +2,11 @@ const { Pool } = require('pg');
 
 //use pool for multiple concurrent requests
 const pool = new Pool({
-    database: 'tripadvisorinfo'
+    user: 'postgres',
+    host: '52.89.253.13',
+    database: 'tripadvisorinfo',
+    password: process.env.postgrespw,
+    port: '5432'
 });
 
 pool.connect(); 

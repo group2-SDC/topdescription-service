@@ -1,1 +1,0 @@
-ssh -i /Users/christopherhancock/Desktop/HRSEA13/taDescriptionService/topDescriptionService/carousel.pem ubuntu@ec2-18-222-149-170.us-east-2.compute.amazonaws.com

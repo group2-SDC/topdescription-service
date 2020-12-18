@@ -1,11 +1,18 @@
+const newrelic = require('newrelic');
 const express = require('express');
 const db = require('../database/postGres/index.js');
 const app = express();
-const port = 3000;
+const port = 3001;
 const path = require('path');
 const { Pool } = require('pg');
 
 const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
+
+app.use('/', express.static(PUBLIC_DIR));
+
+app.get('/loaderio-f8fd8ba1a45b0ca3d1f36fc5e3847a66.txt', (req, res) => {
+    res.send('loaderio-f8fd8ba1a45b0ca3d1f36fc5e3847a66')
+});
 
 app.use('/:listing_id', express.static(PUBLIC_DIR));
 

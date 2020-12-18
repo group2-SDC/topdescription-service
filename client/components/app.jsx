@@ -26,7 +26,6 @@ class App extends React.Component {
 	
 	    Axios.get(`/api/listings/${this.state.index}/carousel`)
             .then((response) => {
-                console.log(response.data[0]);
                 this.setState({
                     data: response.data[0]
                 });
@@ -51,7 +50,6 @@ class App extends React.Component {
 
     
     render() {
-        console.log('data', this.state.data);
         if (!this.state.data) {
             return (
                 <div>Loading</div>
